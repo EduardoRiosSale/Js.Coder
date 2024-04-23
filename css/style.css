@@ -1,0 +1,320 @@
+/*reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.dark-mode{
+    background-color:#000000;
+    color: white;
+    mix-blend-mode:lighten;
+}
+/* cuerpo */
+h1{
+    margin: auto;
+}
+
+h2{
+    text-align: center;
+    margin-top: 2px;
+    margin: auto;
+}
+
+.titulo1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    text-decoration:underline;
+}
+
+.titulo2{
+    font-size: 30px;
+    margin: 10px;
+    text-decoration: underline;
+}
+
+.padre{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    gap: 20px;
+    align-items: center;
+}
+
+.hijo, .hijo2{
+    text-align:center;
+}
+
+.madre{
+    display: flex;
+    flex-direction:column;
+    justify-content:left;
+    margin: auto;
+    align-items: center;
+}
+.qsomos{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.imgqsomos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+.img3{
+    width: 500px;
+    height: 200px;
+}
+/*estilos de navegacion */
+
+.inicio2{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    gap: 1rem;
+    align-items:center;
+    list-style: none;
+}
+
+.inicio{
+    display:flex ;
+    flex-direction:column;
+    align-items:center;
+}
+.logo{
+    display:grid;
+    width: auto;
+    height: 150px;
+    mix-blend-mode:multiply;
+    background-color: white;
+}
+.img{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: #000;
+}
+.img2{
+    display: flex;
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    
+}
+
+
+.barra a:link{
+    color: #60A8B1;
+}
+
+
+a:visited{
+    color:#60A8B1;
+    
+}
+
+/* estilos de "Adopta con nosotros */
+
+.contenedor div img{
+    width: 100%;
+    height: 100%;
+    object-fit:flex;
+    padding: 1px;
+    margin: 1px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+}
+
+.contenedor{
+    height:50dvh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 30%);
+    gap: 1rem;
+    margin: 2px 1px 1px;
+    justify-content: center;
+}
+.img-tres{
+    display: none;
+}
+.img-cuatro{
+    display: none;
+}
+
+/*estilos de formulario */
+
+.piupiu{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6TdSfrO998ZzzjRPqKhfBIUVKYRFFeAXarw&usqp=CAU);
+    height: 100px;
+}
+.guau{
+    background-image: url(https://us.123rf.com/450wm/feedough/feedough2005/feedough200500416/147652915-nerdy-lindo-perro-labrador-retriever-con-pajarita-rosa-con-anteojos-sacando-la-lengua-sobre-fondo.jpg?ver=6);
+    height: 100px;
+}
+
+
+.miau{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/021/957/915/small/cat-having-bad-mood-angry-pet-bad-emotions-anger-dissatisfaction-with-life-negative-facial-expression-bad-day-misfortune-concept-generative-ai-photo.jpg);
+    border-image:stretch;
+    height: 100px;
+}
+
+
+.lista{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    list-style: none;
+    font-size: large;
+    background-color:#60A8B1;
+    width:max-content;
+    border-radius: 0.2rem;
+}
+.btn-group{
+    display: flex;
+    flex-direction:column-reverse;
+    justify-content: center;
+    
+}
+.form{
+    height: 30px;
+    text-justify: distribute ;
+    border-color: #60A8B0;
+}
+
+.puntos{
+    list-style:decimal;
+}
+
+/* footer */
+
+footer{
+    background-color: gray;
+    width: auto;
+    height: auto;
+}
+
+.fondo{
+    display: flex;
+    justify-content:left;
+    width: 200px;
+    height: 100px;
+}
+footer p{
+    color: #60A8B0;
+    text-transform:uppercase;
+    height: auto;
+    width:auto;
+    background-size: cover;
+}
+footer div ul li a{
+    height: 35px;
+    width: max-content;
+    display: flex;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+/* boton */
+button{
+    border: 0;
+    background-image: linear-gradient(150deg, #60A9B1,#808080,#FFFFFF,#000000);
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    position:sticky;
+    left: 40%;
+    margin: 15px;
+}
+
+
+button span{
+    background-color:#768C8E;
+    border-radius: 9px;
+    color: white;
+    padding: 10px 20px;
+    transition: .3s;
+    align-items: center;
+    justify-content: center;
+}
+button:hover span{
+    background: none;
+}
+/* mq de tables */
+
+@media screen and (min-width:600px){
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 31%);
+        }
+    .contenedor .img-cinco{
+        grid-column: span 2;
+    }
+    .padre{
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        flex-direction: column;
+        display:flex;
+    }
+    footer{
+        background-color: gray;
+        width: auto;
+        height: auto;
+    }
+}
+
+.madre{
+    display: flex;
+    width: fit-content;
+}
+
+/* mq de desktop */
+
+
+@media screen and (min-width:1024px){
+    .contenedor{
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: 45% 40% 40%,
+    }
+    .img-tres{
+        display: grid;
+    }
+    .img-cuatro{
+        display: flex;
+    }
+    
+    .padre{
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        display:flex;
+        margin: 15px;
+    }
+
+    .contenedor .contenedor .img-cuatro{
+        grid-row: span 2;
+    }
+    .contenedor .img-cinco{
+        grid-column: span 1;
+    }
+    .contenedor .img-dos{
+        grid-row: span 1;
+    }
+    .contenedor .img-tres{
+        grid-row: span 2;
+    }
+
+}
+
+
