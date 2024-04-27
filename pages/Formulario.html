@@ -9,20 +9,28 @@
 
 
 <body class="">
+        
     <header class="inicio">
-        <img class="logo" src="../Imagen/Hospitalveterinario.png" alt="LOGO">
     <div>
+        
         <nav>
+            
             <ul class="inicio2">
+                <div class="logo">
+                    <ul class="logo2">
+                        <img class="logo3" src="../Imagen/Logo hospital veterinario .png" alt="LOGO">
+                    </ul>
+            </div>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./Quienessomos.html">Quienes somos</a></li>
+                <li><a href="./Quienessomos.html">Nosotros</a></li>
                 <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./Adopta_con_nosotros.html">Adoptemos</a></li>
+                <li><a href="./Adopta_con_nosotros.html">Adopta</a></li>
                 <li><a href="./Formulario.html">Formulario</a></li>
-                <li><a href="./Contactanos.html">Contactanos</a></li>
+                <li><a href="./Contactanos.html">Contacto</a></li>
                 <button id="color-mode" class="btn">
-                    🌙
+                    ☀️
                     </button>
+                    
             </ul>
         </nav>
     </div>
@@ -32,22 +40,29 @@
 <h1 class="titulo1">Con nosotros podes adoptar</h1>
 
 <div class="btn-group">
-    
-    <button class="guau" id="Perro" class="btn" onclick="">
-        Perro
-    </button>
-    <button class="miau" id="Gato" class="btn" onclick="">
-        Gato
-    </button>
-    <button class="piupiu" id="Ave" class="btn" onclick="">
-        Ave
-    </button>
+    <ul class="boton">
+        <li class="boton2">
+            <button class="guau" id="Perro" class="btn" onclick="">
+                Perro
+            </button>
+        </li>
+        <li class="boton2">
+            <button class="miau" id="Gato" class="btn" onclick="">
+                Gato
+            </button>
+        </li>
+        <li class="boton2">
+            <button class="piupiu" id="Ave" class="btn" onclick="">
+                Ave
+            </button>
+        </li>
+    </ul>
 </div>
 
 <form action="">
 <input type="text" id="nombre" placeholder="Ingrese su nombre">
 
-<select name="" id="">
+<select class="" name="" id="">
     <option value="Gato">Gato</option>
     <option value="Perro">Perro</option>
     <option value="Ave">Ave</option>
@@ -64,28 +79,44 @@
 <div>
 
 <div class="lista">
-    <li class="form"><input type="text" id="nombre" placeholder="Ingrese su nombre"></li>
-    <li class="form"><input type="text" id="nombre" placeholder="Ingrese su apellido"></li>
-    <li class="form"><input type="text" id="nombre" placeholder="Ingrese su dirección"></li>
-    <li class="form"><input type="text" id="nombre" placeholder="Ingrese su comuna"></li>
-    <li class="form"><input type="text" id="nombre" placeholder="Inbrese su email"></li>
-    <li class="form"><input type="text" id="nombre" placeholder="Ingrese su telefono"></li>
+    <ul class="list">
+        <li class="form"><input type="text" id="nombre" placeholder="Ingrese su nombre"></li>
+        <li class="form"><input type="text" id="nombre" placeholder="Ingrese su apellido"></li>
+    </ul>
+</div>
+
+<div class="lista">
+    <ul class="list1">
+        <li class="form"><input type="text" id="nombre" placeholder="Ingrese su dirección"></li>
+        <li class="form"><input type="text" id="nombre" placeholder="Ingrese su comuna"></li>
+    </ul>
+    
+</div>
+<div class="lista">
+    <ul class="lista2">
+        <li class="form"><input type="text" id="nombre" placeholder="Inbrese su email"></li>
+        <li class="form"><input type="text" id="nombre" placeholder="Ingrese su telefono"></li>
+    </ul>
+    
 </div>
 
 <div>
     <h4 class="tituloadop">Datos del animal adoptado</h4>
 </div>
-<div class="lista">
+<div class="lista2">
     <li class="form"><input type="text" id="nombre" placeholder="nombre"></li>
     <li class="form"><input type="text" id="nombre" placeholder="raza/color"></li>
+</div>
+<div class="lista2">
     <li class="form"><input type="text" id="nombre" placeholder="especie"></li>
     <li class="form"><input type="text" id="nombre" placeholder="sexo"></li>
-    <li class="form"><input type="text" id="nombre" placeholder="N°Chip"></li>
+</div>
+<div class="lista2"><li class="form"><input type="text" id="nombre" placeholder="N°Chip"></li>
     <li class="form"><input type="text" id="nombre" placeholder="Peso"></li>
-    <li class="form"><input type="text" id="nombre" placeholder="esterilizado"></li>
+</div>
+<div class="lista2"><li class="form"><input type="text" id="nombre" placeholder="esterilizado"></li>
     <li class="form"><input type="text" id="nombre" placeholder="desparacitado"></li>
 </div>
-
 
 <button id="enviar" class="btn" onclick="">
         Enviar formulario.
