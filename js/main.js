@@ -1,5 +1,5 @@
 let urlMain = 'https://api.openweathermap.org/data/2.5/weather'
-let api_key = '622987553f58f533ea5122e108051323'
+let api_key = '01c5190151deba0603f49f4aa73a480e'
 
 document.getElementById('buttonSearch').addEventListener('click', () => {
     const city = document.getElementById('cityRoute').value
